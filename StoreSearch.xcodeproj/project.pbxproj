@@ -18,6 +18,8 @@
 		56C8D1D71E3B11F4004EED86 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C8D1D61E3B11F4004EED86 /* SearchResultCell.xib */; };
 		56C8D1D91E3BAB25004EED86 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8D1D81E3BAB25004EED86 /* SearchResultCell.swift */; };
 		56E2AD251E4238C3000A8E03 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E2AD241E4238C3000A8E03 /* UIImageView+DownloadImage.swift */; };
+		56E2AD271E424138000A8E03 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E2AD261E424138000A8E03 /* DetailViewController.swift */; };
+		56E2AD291E42449E000A8E03 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E2AD281E42449E000A8E03 /* DimmingPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		56C8D1D61E3B11F4004EED86 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		56C8D1D81E3BAB25004EED86 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		56E2AD241E4238C3000A8E03 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		56E2AD261E424138000A8E03 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		56E2AD281E42449E000A8E03 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				5623A59D1E3FAA7300D4B2FF /* NothingFoundCell.xib */,
 				56397B331E403EFA000435C2 /* LoadingCell.xib */,
 				56E2AD241E4238C3000A8E03 /* UIImageView+DownloadImage.swift */,
+				56E2AD261E424138000A8E03 /* DetailViewController.swift */,
+				56E2AD281E42449E000A8E03 /* DimmingPresentationController.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -230,8 +236,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				56C8D1B71E3AFEDF004EED86 /* SearchViewController.swift in Sources */,
+				56E2AD291E42449E000A8E03 /* DimmingPresentationController.swift in Sources */,
 				56C8D1D51E3B0A08004EED86 /* SearchResult.swift in Sources */,
 				56C8D1D91E3BAB25004EED86 /* SearchResultCell.swift in Sources */,
+				56E2AD271E424138000A8E03 /* DetailViewController.swift in Sources */,
 				56C8D1B51E3AFEDF004EED86 /* AppDelegate.swift in Sources */,
 				56E2AD251E4238C3000A8E03 /* UIImageView+DownloadImage.swift in Sources */,
 			);
