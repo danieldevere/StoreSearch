@@ -203,6 +203,42 @@
             </objects>
             <point key="canvasLocation" x="1366" y="441"/>
         </scene>
+        <!--Landscape View Controller-->
+        <scene sceneID="vuG-AJ-P4a">
+            <objects>
+                <viewController storyboardIdentifier="LandscapeViewController" id="S6A-ti-yB4" customClass="LandscapeViewController" customModule="StoreSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9u1-gC-O8h"/>
+                        <viewControllerLayoutGuide type="bottom" id="fQy-CT-jT5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZX8-k5-URd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Km2-fr-tsR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="S6A-ti-yB4" id="GcK-MF-xGa"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="t2F-HI-Qcj">
+                                <rect key="frame" x="280" y="282" width="40" height="37"/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="S6A-ti-yB4" eventType="valueChanged" id="Pnk-YV-rAD"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="t2F-HI-Qcj" id="LKh-a9-dqH"/>
+                        <outlet property="scrollView" destination="Km2-fr-tsR" id="jDR-C7-GQH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I02-SA-HRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="1128"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CloseButton" width="15" height="15"/>
