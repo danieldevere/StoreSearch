@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5623A59E1E3FAA7300D4B2FF /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5623A59D1E3FAA7300D4B2FF /* NothingFoundCell.xib */; };
 		56397B341E403EFA000435C2 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56397B331E403EFA000435C2 /* LoadingCell.xib */; };
+		567D3B9E1E44DD7E0094C56D /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D3B9D1E44DD7E0094C56D /* Search.swift */; };
 		56844F871E4386F8008AF3E9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56844F861E4386F8008AF3E9 /* GradientView.swift */; };
 		56844F891E438C47008AF3E9 /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56844F881E438C47008AF3E9 /* BounceAnimationController.swift */; };
 		56844F8B1E43923F008AF3E9 /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56844F8A1E43923F008AF3E9 /* SlideOutAnimationController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		5623A59D1E3FAA7300D4B2FF /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		56397B331E403EFA000435C2 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		567D3B9D1E44DD7E0094C56D /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		56844F861E4386F8008AF3E9 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		56844F881E438C47008AF3E9 /* BounceAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		56844F8A1E43923F008AF3E9 /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				56C8D1D41E3B0A08004EED86 /* SearchResult.swift */,
 				56E2AD241E4238C3000A8E03 /* UIImageView+DownloadImage.swift */,
+				567D3B9D1E44DD7E0094C56D /* Search.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				567D3B9E1E44DD7E0094C56D /* Search.swift in Sources */,
 				56C8D1B71E3AFEDF004EED86 /* SearchViewController.swift in Sources */,
 				56E2AD291E42449E000A8E03 /* DimmingPresentationController.swift in Sources */,
 				56844F941E43A167008AF3E9 /* FadeOutAnimationController.swift in Sources */,

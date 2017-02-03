@@ -10,7 +10,7 @@ import UIKit
 
 class LandscapeViewController: UIViewController {
     
-    var searchResults = [SearchResult]()
+    var search: Search!
     
     private var firstTime = true
     
@@ -59,7 +59,7 @@ class LandscapeViewController: UIViewController {
         super.viewDidAppear(animated)
         if firstTime {
             firstTime = false
-            tileButtons(searchResults)
+            tileButtons(search.searchResults)
         }
     }
 
