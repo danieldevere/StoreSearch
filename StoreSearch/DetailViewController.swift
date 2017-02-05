@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class DetailViewController: UIViewController {
     
@@ -35,6 +36,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var kindLabel: UILabel!
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var priceButton: UIButton!
+    
     
     
     
@@ -90,6 +92,13 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowMenu" {
+            let controller = segue.destinationViewController as! MenuViewController
+            controller.delegate = self
+        }
+    }
+    
     func updateUI() {
         nameLabel.text = searchResult.name
         if searchResult.artistName.isEmpty {
@@ -117,7 +126,8 @@ class DetailViewController: UIViewController {
         popupView.hidden = false
         
     }
-}
+    
+    }
 
 extension DetailViewController: UIViewControllerTransitioningDelegate {
     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {
@@ -142,4 +152,29 @@ extension DetailViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
         return (touch.view === view)
     }
+}
+
+extension DetailViewController: MenuViewControllerDelegate {
+    func menuViewControllerSendSupportEmail(_: MenuViewController) {
+        dismissViewControllerAnimated(true, completion: {
+            if MFMailComposeViewController.canSendMail() {
+                let controller = MFMailComposeViewController()
+                controller.setSubject(NSLocalizedString("Support Request", comment: "Support email subject"))
+                controller.setToRecipients(["danieldevere285@gmail.com"])
+                self.presentViewController(controller, animated: true, completion: nil)
+                controller.mailComposeDelegate = self
+            }
+        })
+    }
+    func cancelEmailMenu() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
+}
+
+extension DetailViewController: MFMailComposeViewControllerDelegate {
+    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 }
