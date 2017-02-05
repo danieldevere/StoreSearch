@@ -12,6 +12,7 @@
 		561AF46A1E46A292004C07CC /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561AF46C1E46A292004C07CC /* SearchResultCell.xib */; };
 		561AF4751E46AB2F004C07CC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 561AF4731E46AB2F004C07CC /* Localizable.strings */; };
 		561AF4791E46AF3B004C07CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 561AF47B1E46AF3B004C07CC /* InfoPlist.strings */; };
+		567128C41E479A3A008CA51D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567128C31E479A3A008CA51D /* MenuViewController.swift */; };
 		567D3B9E1E44DD7E0094C56D /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D3B9D1E44DD7E0094C56D /* Search.swift */; };
 		56844F871E4386F8008AF3E9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56844F861E4386F8008AF3E9 /* GradientView.swift */; };
 		56844F891E438C47008AF3E9 /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56844F881E438C47008AF3E9 /* BounceAnimationController.swift */; };
@@ -52,6 +53,7 @@
 		561AF47A1E46AF3B004C07CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		561AF47C1E46AF42004C07CC /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		561AF47D1E46AF61004C07CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		567128C31E479A3A008CA51D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		567D3B9D1E44DD7E0094C56D /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		56844F861E4386F8008AF3E9 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		56844F881E438C47008AF3E9 /* BounceAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				56844F881E438C47008AF3E9 /* BounceAnimationController.swift */,
 				56E2AD281E42449E000A8E03 /* DimmingPresentationController.swift */,
 				56844F931E43A167008AF3E9 /* FadeOutAnimationController.swift */,
+				567128C31E479A3A008CA51D /* MenuViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				567D3B9E1E44DD7E0094C56D /* Search.swift in Sources */,
 				56C8D1B71E3AFEDF004EED86 /* SearchViewController.swift in Sources */,
 				56E2AD291E42449E000A8E03 /* DimmingPresentationController.swift in Sources */,
+				567128C41E479A3A008CA51D /* MenuViewController.swift in Sources */,
 				56844F941E43A167008AF3E9 /* FadeOutAnimationController.swift in Sources */,
 				56C8D1D51E3B0A08004EED86 /* SearchResult.swift in Sources */,
 				56C8D1D91E3BAB25004EED86 /* SearchResultCell.swift in Sources */,
